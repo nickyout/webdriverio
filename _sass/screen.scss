@@ -4,7 +4,7 @@
 @import "compass/css3/images";
 
 // import Lato font
-@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url("http://fonts.googleapis.com/css?family=Lato");
 
 // reset CSS before including inform styles
 @include global-reset();
@@ -29,17 +29,17 @@
 
 // general styles
 html,body {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background: $bodyBackground;
-	font-family: $fontFamily;
-	font-size: 16px;
-	color: $textColor;
-	line-height: 1.3em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: $bodyBackground;
+    font-family: $fontFamily;
+    font-size: 16px;
+    color: $textColor;
+    line-height: 1.3em;
 }
 
 img[alt="Sauce Labs"] {
-	margin: 15px 20px 0 0;
+    margin: 15px 20px 0 0;
 }

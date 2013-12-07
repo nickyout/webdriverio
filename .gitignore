@@ -8,3 +8,6 @@ _site
 ## temp folders
 .sass-cache
 .DS_Store
+
+## generated files
+*.css
