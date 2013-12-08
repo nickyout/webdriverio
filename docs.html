@@ -16,18 +16,19 @@
 
                 <h3>{{ commandTypeName }}</h3>
                 {% for command in commands %}
-                <a href="#/{{ command.name }}">{{ command.name }}</a>
+                <a href="#{{ command.name }}">{{ command.name }}</a>
                 {% endfor %}
 
             {% endfor %}
         </div>
-        <div class="col2 docs">
+        <div class="col2 description">
             <h3>Description</h3>
             {% for commandTypeName in site.commandTypes %}
                 {% assign commandType = commandTypeName | downcase %}
                 {% assign commands = site.tags[commandType] %}
 
                 {% for command in commands %}
+                <a name="{{ command.name }}"></a>
                 <article class="command">
                     <h4>{{ command.name }}</h4>
                     {{ command.content }}
