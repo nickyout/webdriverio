@@ -1,0 +1,40 @@
+---
+  layout: default
+  title: WebdriverJS - Selenium 2.0 javascript bindings for nodejs
+---
+
+<section>
+    <h2>API Documentation</h2>
+    <p>
+        WebdriverJS provides several functions to navigate and operate with a website.
+    </p>
+    <div class="commandList">
+        <div class="col2 links">
+            {% for commandTypeName in site.commandTypes %}
+                {% assign commandType = commandTypeName | downcase %}
+                {% assign commands = site.tags[commandType] %}
+
+                <h3>{{ commandTypeName }}</h3>
+                {% for command in commands %}
+                <a href="#/{{ command.name }}">{{ command.name }}</a>
+                {% endfor %}
+
+            {% endfor %}
+        </div>
+        <div class="col2 docs">
+            <h3>Description</h3>
+            {% for commandTypeName in site.commandTypes %}
+                {% assign commandType = commandTypeName | downcase %}
+                {% assign commands = site.tags[commandType] %}
+
+                {% for command in commands %}
+                <article class="command">
+                    <h4>{{ command.name }}</h4>
+                    {{ command.content }}
+                </article>
+                {% endfor %}
+
+            {% endfor %}
+        </div>
+    </div>
+</section>

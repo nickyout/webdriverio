@@ -3,34 +3,35 @@
   title: WebdriverJS - Selenium 2.0 javascript bindings for nodejs
 ---
 
+{% capture whatIsWebdriverjs %}{% include articles/whatIsWebdriverjs.md %}{% endcapture %}
+{% capture whoIsUsing %}{% include articles/runYourTestsInTheCloud.md %}{% endcapture %}
+{% capture easeOfUse %}{% include articles/teaser/easeOfUse.md %}{% endcapture %}
+{% capture featureRich %}{% include articles/teaser/featureRich.md %}{% endcapture %}
+{% capture compatible %}{% include articles/teaser/compatible.md %}{% endcapture %}
+{% capture extendable %}{% include articles/teaser/extendable.md %}{% endcapture %}
+
 <article class="col2">
-    {% capture whatIsWebdriverjs %}{% include articles/whatIsWebdriverjs.md %}{% endcapture %}
     {{ whatIsWebdriverjs | markdownify }}
 </article>
 
 <article class="col2 last">
-    {% capture whoIsUsing %}{% include articles/runYourTestsInTheCloud.md %}{% endcapture %}
     {{ whoIsUsing | markdownify }}
 </article>
 
 <aside class="teaser">
     <div class="teaserbox">
-        {% capture easeOfUse %}{% include articles/teaser/easeOfUse.md %}{% endcapture %}
         {{ easeOfUse | markdownify }}
     </div>
 
     <div class="teaserbox">
-        {% capture featureRich %}{% include articles/teaser/featureRich.md %}{% endcapture %}
         {{ featureRich | markdownify }}
     </div>
 
     <div class="teaserbox">
-        {% capture compatible %}{% include articles/teaser/compatible.md %}{% endcapture %}
         {{ compatible | markdownify }}
     </div>
 
     <div class="teaserbox">
-        {% capture extendable %}{% include articles/teaser/extendable.md %}{% endcapture %}
         {{ extendable | markdownify }}
     </div>
 </aside>
