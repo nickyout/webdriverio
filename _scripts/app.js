@@ -1,11 +1,13 @@
 var App = function() {
 
     this.ui = {
-        body: $('body')
+        body: $('body'),
+        gists: $('.gists > div')
     };
 
     this.events = {
-        'click .links>a': 'scrollToCommand'
+        'click .links>a': 'scrollToCommand',
+        'click .gist-header>button': 'openGist'
     };
 
     this.delegateEvents();
@@ -22,6 +24,11 @@ App.prototype.scrollToCommand = function(e) {
         this.ui.body.animate({scrollTop: targetOffset}, 1000);
         return false;
     }
+};
+
+App.prototype.openGist = function(e) {
+    this.ui.gists.filter('.show').removeClass('show');
+    this.ui.gists.filter('.' + $(e.target).data('gist')).addClass('show');
 };
 
 /**
