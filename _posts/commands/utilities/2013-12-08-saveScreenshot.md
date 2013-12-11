@@ -3,9 +3,11 @@ tags: utilities
 name: saveScreenshot
 arguments:
     - type: String
-      name: "path to file"
+      name: path
+      desc: path of generated image (relative to the execution directory)
     - type: Function
-      name: callback
+      name: callback(err, image)
+      desc: A function returning with the screenshot as a base64 encoded PNG
 ---
 
-Saves a screenshot as a png from the current state of the browser
+Save a screenshot as a base64 encoded PNG with the current state of the browser.

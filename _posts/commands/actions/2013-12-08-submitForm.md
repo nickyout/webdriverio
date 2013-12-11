@@ -3,9 +3,12 @@ tags: actions
 name: submitForm
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: form element
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-Submits a form found by the css selector
+Submits a form found by the css selector. The submit command may also be
+applied to any element that is a descendant of a &lt;form&gt; element.

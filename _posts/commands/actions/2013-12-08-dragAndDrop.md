@@ -3,11 +3,14 @@ tags: actions
 name: dragAndDrop
 arguments:
     - type: String
-      name: "source css selector"
+      name: source
+      desc: source css selector
     - type: String
-      name: "destination css selector"
+      name: destination
+      desc: destination css selector
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-Drags an item to a destination
+Drag an item to a destination element.

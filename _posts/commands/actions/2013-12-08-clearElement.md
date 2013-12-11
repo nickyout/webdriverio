@@ -3,9 +3,11 @@ tags: actions
 name: clearElement
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: Input element
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-clear an element of text
+Clear a &lt;textarea&gt; or text &lt;input&gt; element's value.

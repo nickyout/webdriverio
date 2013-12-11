@@ -3,9 +3,11 @@ tags: utilities
 name: addCommand
 arguments:
     - type: String
-      name: "name"
+      name: name
+      desc: command name
     - type: Function
-      name: "command function"
+      name: function
+      desc: Function getting executed by calling this command
 ---
 
-Adds a command with specific-encapsulated functionality to client
+Add a command with specific-encapsulated functionality to client.

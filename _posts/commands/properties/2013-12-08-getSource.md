@@ -3,7 +3,8 @@ tags: properties
 name: getSource
 arguments:
     - type: Function
-      name: callback
+      name: callback(err, sourceCode)
+      desc: A function returning with the source code of current website
 ---
 
-Gets source code of the page
+Get source code of the page.

@@ -3,13 +3,17 @@ tags: window
 name: newWindow
 arguments:
     - type: String
-      name: "url"
+      name: url
+      desc: website URL to open
     - type: String
-      name: "name for the new window"
+      name: windowName
+      desc: name of the new window
     - type: String
-      name: "new window features (e.g. size, position, scrollbars, etc.)"
+      name: windowFeatures
+      desc: features of opened window (e.g. size, position, scrollbars, etc.)
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-equivalent function to window.open() in a browser
+Open new window in browser. This command is  the equivalent function to window.open().

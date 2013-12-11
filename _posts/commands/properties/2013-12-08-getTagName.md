@@ -3,9 +3,11 @@ tags: properties
 name: getTagName
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: element with requested tag name
     - type: Function
-      name: callback
+      name: callback(err, tagName)
+      desc: A function returning with requested tag name
 ---
 
-Gets the tag name of a dom obj found by the css selector
+Get tag name of a DOM-element found by the css selector.

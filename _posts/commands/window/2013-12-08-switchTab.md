@@ -3,7 +3,11 @@ tags: window
 name: switchTab
 arguments:
     - type: String
-      name: "tab ID"
+      name: tabID
+      name: tab ID to focus on
+    - type: Function
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-switch focus to a particular tab/window
+Switch focus to a particular tab / window handle.

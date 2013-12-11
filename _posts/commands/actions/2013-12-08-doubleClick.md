@@ -3,9 +3,11 @@ tags: actions
 name: doubleClick
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: Element to double click on. If it matches with more than on DOM-element it automatically clicks on the first element
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-Clicks on an element based on a css selector
+Double-click on an element based on a css selector.

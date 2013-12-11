@@ -3,9 +3,11 @@ tags: properties
 name: getLocationInView
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: element with requested position offset
     - type: Function
-      name: callback
+      name: callback(err, value)
+      desc: A function returning with requested element offset
 ---
 
-Gets the x and y coordinate for an object based on the css selector in the view
+Determine an element's location on the screen once it has been scrolled into view.

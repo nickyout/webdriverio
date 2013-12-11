@@ -3,9 +3,11 @@ tags: actions
 name: buttonClick
 arguments:
     - type: String
-      name: "css selector"
+      name: css selector
+      desc: Button element
     - type: Function
-      name: callback
+      name: callback(err)
+      desc: A function returning if command was executed successfully
 ---
 
-click on a button using a css selector
+Click on a button using a css selector.
