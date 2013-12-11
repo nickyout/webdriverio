@@ -21,7 +21,7 @@ App.prototype.scrollToCommand = function(e) {
 
     if (target.length) {
         var targetOffset = target.offset().top;
-        this.ui.body.animate({scrollTop: targetOffset}, 1000);
+        this.ui.body.animate({scrollTop: targetOffset}, 1000, 'easeOutExpo');
         return false;
     }
 };
@@ -60,3 +60,8 @@ App.prototype.delegateEvents = function() {
 $(function() {
     new App();
 });
+
+jQuery.extend( jQuery.easing, { easeOutExpo: function (x, t, b, c, d) {
+    if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+    return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+}});
