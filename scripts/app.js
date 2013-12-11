@@ -17,10 +17,10 @@ App.prototype.scrollToCommand = function(e) {
     e.preventDefault();
 
     var elem = $(e.target),
-        target = $('a[name="' + elem.attr('href').slice(1) + '"]');
+        target = $('#' + elem.attr('href').slice(1));
 
     if (target.length) {
-        var targetOffset = target.offset().top;
+        var targetOffset = target.offset().top - 30;
         this.ui.body.animate({scrollTop: targetOffset}, 1000, 'easeOutExpo');
         return false;
     }

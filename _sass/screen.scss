@@ -3,9 +3,6 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/images";
 
-// import Lato font
-@import url("http://fonts.googleapis.com/css?family=Lato");
-
 // reset CSS before including inform styles
 @include global-reset();
 
@@ -35,7 +32,7 @@ html,body {
     margin: 0;
     padding: 0;
     background: $bodyBackground;
-    font-family: $fontFamily;
+    font-family: $fontRegular;
     font-size: 16px;
     color: $textColor;
     line-height: 1.3em;
@@ -43,4 +40,16 @@ html,body {
 
 img[alt="Sauce Labs"] {
     margin: 15px 20px 0 0;
+}
+
+strong {
+    font-family: $fontBold;
+}
+
+[class*="icon-"]:before,
+[class*="icon-"]:after {
+  font-family: 'FontAwesome', sans-serif;
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
 }

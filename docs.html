@@ -28,15 +28,14 @@
                 {% assign commands = site.tags[commandType] %}
 
                 {% for command in commands reversed %}
-                <a name="{{ command.name }}"></a>
                 <article class="command">
-                    <h4>{{ command.name }}
+                    <h4><a class="icon-link" id="{{command.name}}" href="#{{command.name}}">{{ command.name }}
                     (
                     {% assign i = 0 %}
                     {% for argument in command.arguments %}
                         {{ argument.name }}{% if forloop.last == false %},{% endif %}
                     {% endfor %}
-                    )</h4>
+                    )</a></h4>
                     {{ command.content }}
 
                     {% if command.arguments | size > 0 %}
@@ -44,13 +43,14 @@
                         {% for argument in command.arguments %}
                         <li>
                             <h5>{{ argument.name }}</h5>
-                            <div class="type">Type: {{ argument.type }}</div>
+                            <div class="type"><strong>Type:</strong> {{ argument.type }}</div>
                             <div class="desc">{{ argument.desc }}</div>
                         </li>
                         {% endfor %}
                     </ul>
                     {% endif %}
                 </article>
+                <a href="#top" class="icon-angle-up">top</a>
                 {% endfor %}
 
             {% endfor %}

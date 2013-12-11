@@ -29,6 +29,17 @@
                 padding: 20px;
                 border: $borderColor solid 1px;
 
+                .icon-link {
+                    text-decoration: none;
+
+                    &:before {
+                        float: left;
+                        margin: 3px 5px 17px 0;
+                        font-size: 0.8em;
+                        text-shadow: 1px 0px 0px $white;
+                    }
+                }
+
                 .arguments {
                     margin-top: 15px;
                     background: $white;
@@ -41,6 +52,16 @@
                     .desc {
                         margin-top: 10px;
                     }
+                }
+            }
+
+            .icon-angle-up {
+                text-align: right;
+                text-decoration: none;
+                display: block;
+
+                &:after {
+                    margin-left: 5px;
                 }
             }
         }
