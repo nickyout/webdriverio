@@ -1,4 +1,4 @@
 exclude: [config.rb, sass, node_modules]
 plugins: _plugins
 
-commandTypes: ["Properties","Actions","Utilities","Cookies","Window"]
+commandTypes: ["Properties","Actions","State","Utilities","Cookies","Window"]
