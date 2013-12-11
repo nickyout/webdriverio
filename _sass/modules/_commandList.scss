@@ -28,6 +28,20 @@
                 background: $commandLayer;
                 padding: 20px;
                 border: $borderColor solid 1px;
+
+                .arguments {
+                    margin-top: 15px;
+                    background: $white;
+                    padding-bottom: 10px;
+
+                    .type, .desc {
+                        padding: 0 15px;
+                    }
+
+                    .desc {
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }

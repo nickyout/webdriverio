@@ -15,7 +15,7 @@
                 {% assign commands = site.tags[commandType] %}
 
                 <h3>{{ commandTypeName }}</h3>
-                {% for command in commands %}
+                {% for command in commands reversed %}
                 <a href="#{{ command.name }}">{{ command.name }}</a>
                 {% endfor %}
 
@@ -27,11 +27,29 @@
                 {% assign commandType = commandTypeName | downcase %}
                 {% assign commands = site.tags[commandType] %}
 
-                {% for command in commands %}
+                {% for command in commands reversed %}
                 <a name="{{ command.name }}"></a>
                 <article class="command">
-                    <h4>{{ command.name }}</h4>
+                    <h4>{{ command.name }}
+                    (
+                    {% assign i = 0 %}
+                    {% for argument in command.arguments %}
+                        {{ argument.name }}{% if forloop.last == false %},{% endif %}
+                    {% endfor %}
+                    )</h4>
                     {{ command.content }}
+
+                    {% if command.arguments | size > 0 %}
+                    <ul class="arguments">
+                        {% for argument in command.arguments %}
+                        <li>
+                            <h5>{{ argument.name }}</h5>
+                            <div class="type">Type: {{ argument.type }}</div>
+                            <div class="desc">{{ argument.desc }}</div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
                 </article>
                 {% endfor %}
 

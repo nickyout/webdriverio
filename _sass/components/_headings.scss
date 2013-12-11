@@ -5,7 +5,7 @@ h2 {
 }
 
 h3 {
-	font-size: $h3Size;
+    font-size: $h3Size;
     margin: 15px 0 10px;
 }
 
@@ -13,4 +13,13 @@ h4 {
     color: $orange;
     font-size: $h4Size;
     margin-bottom: 20px;
+}
+
+h5 {
+    @include border-radius(3px);
+    background: $argumentBackground;
+    color: $white;
+    font-size: 16px;
+    padding: 4px 10px;
+    margin: 10px 0;
 }
