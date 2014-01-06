@@ -131,26 +131,13 @@ table.highlight {
     }
 
     button {
-        @include background-image(linear-gradient(top, #ecb698 0%, #dd6b2a 50%, #ea5906 50%, #b34c11 100%));
-        border: 1px solid #ecb698;
-        border-bottom: 1px solid #ecb698;
-        border-radius: 5px;
-        -webkit-box-shadow: inset 0 1px 0 0 #b34c11;
-        box-shadow: inset 0 1px 0 0 #b34c11;
-        color: #fff;
-        font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
-        padding: 7px 20px 8px;
-        text-decoration: none;
-        text-align: center;
-        text-shadow: 0 -1px 1px #000f4d;
+        @extend .button;
+        padding: 5px 15px 5px;
         margin-left: 10px;
+        border: 0;
 
         &:hover {
             cursor: pointer;
-        }
-        &:active {
-            @include background-image(linear-gradient(bottom, #ecb698 0%, #dd6b2a 50%, #ea5906 50%, #b34c11 100%));
-        
         }
     }
 }

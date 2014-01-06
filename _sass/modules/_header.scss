@@ -27,14 +27,11 @@ header {
     }
 
     .link {
-        @include border-radius(5px);
-        background: $orange;
-        color: $headerFontColor;
+        @extend .button;
         width: $naviWidth;
         height: $naviHeight;
         display: block;
         float: left;
-        text-decoration: none;
         margin: 24.7% 20px 0 0;
         text-align: center;
         font-size: 1.15em;

@@ -4,6 +4,7 @@ footer {
     height: $headerHeight;
     background: $headerBackground;
     color: $footerFontColor;
+    font-size: 0.8em;
 
     .twitterLink {
         @include border-radius(100px);
@@ -11,7 +12,7 @@ footer {
         height: 50px;
         display: block;
         float: left;
-        margin: 20px 20px 0 0;
+        margin: 10px 20px 0 0;
         overflow: hidden;
 
 
@@ -24,13 +25,16 @@ footer {
         display: block;
         clear: both;
         text-align: center;
-        padding-top: 55px;
+        padding-top: 110px;
         overflow: hidden;
 
         em {
             color: $heartColor;
-            font-size: 0.8em;
             padding: 0 5px;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 }
