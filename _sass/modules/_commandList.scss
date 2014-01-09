@@ -34,9 +34,10 @@
 
                     &:before {
                         float: left;
-                        margin: 3px 5px 17px 0;
+                        padding: 4px 5px 0px 0;
                         font-size: 0.8em;
                         text-shadow: 1px 0px 0px $white;
+                        margin-top: -2px;
                     }
                 }
 

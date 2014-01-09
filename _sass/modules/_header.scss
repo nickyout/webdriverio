@@ -4,43 +4,62 @@ header {
     height: $headerHeight;
     background: $headerBackground;
 
-    .hero {
-        text-decoration: none;
+    .container {
+        position: relative;
 
-        h1 {
-            font-size: $headerLogoFontSize;
-            color: $headerFontColor;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            width: 470px;
-            margin: 30px 20px 0 0;
-            line-height: 0.92em;
+        .hero {
+            text-decoration: none;
+
+            h1 {
+                font-size: $headerLogoFontSize;
+                color: $headerFontColor;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 0.1em;
+                width: 470px;
+                margin: 30px 20px 0 0;
+                line-height: 0.92em;
+                float: left;
+
+                &:before {
+                    content: url('/images/webdriver-robot.png');
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .link {
+            @extend .button;
+            width: $naviWidth;
+            height: $naviHeight;
+            display: block;
             float: left;
+            margin: 24.7% 20px 0 0;
+            text-align: center;
+            font-size: 1.15em;
+            line-height: 2.5em;
+            letter-spacing: 0.03em;
 
-            &:before {
-                content: url('/images/webdriver-robot.png');
-                display: block;
-                text-align: center;
+            &.last {
+                margin-right: 0;
+            }
+        }
+
+        aside {
+            text-align: right;
+            position: absolute;
+            top: 20px;
+            right: 0;
+
+            a {
+                margin-left: 10px;
+
+                &.nodei {
+                    display: block;
+                    margin-bottom: 5px;
+                }
             }
         }
     }
-
-    .link {
-        @extend .button;
-        width: $naviWidth;
-        height: $naviHeight;
-        display: block;
-        float: left;
-        margin: 24.7% 20px 0 0;
-        text-align: center;
-        font-size: 1.15em;
-        line-height: 2.5em;
-        letter-spacing: 0.03em;
-
-        &.last {
-            margin-right: 0;
-        }
-    }
-    
 }
