@@ -7,14 +7,8 @@ without any configuration in your enviroment.<br>
 <br>
 Webdriverjs supports services like:
 
-[![Sauce Labs][2]][1]
-[![BrowserStack][4]][3]
-<br><br>
-[![BrowserStack][6]][5]
-
-[1]: https://saucelabs.com/ (Sauce Labs)
-[2]: /images/sauce-labs-logo.png
-[3]: http://www.browserstack.com/ (BrowserStack)
-[4]: /images/browserstack-logo.png
-[5]: http://www.testingbot.com/ (TestingBot)
-[6]: /images/testingbot-logo.png
+<p>
+    <a href="https://saucelabs.com/" class="cloudLink sauce" title="Sauce Labs">Sauce Labs</a>
+    <a href="http://www.browserstack.com/" class="cloudLink browserstack" title="BrowserStack">BrowserStack</a>
+    <a href="http://www.testingbot.com/" class="cloudLink testingbot" title="TestingBot">TestingBot</a>
+</p>

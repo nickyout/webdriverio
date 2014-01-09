@@ -2,6 +2,7 @@
 @import "compass/reset/utilities";
 @import "compass/css3/border-radius";
 @import "compass/css3/images";
+@import "compass/utilities/sprites";
 
 // reset CSS before including inform styles
 @include global-reset();
@@ -9,6 +10,7 @@
 // import utilities
 @import "utils/vars";
 @import "utils/fonts";
+@import "utils/sprites";
 
 // import components
 @import "components/container";
@@ -39,8 +41,23 @@ html,body {
     line-height: 1.3em;
 }
 
-img[alt="Sauce Labs"] {
-    margin: 15px 20px 0 0;
+.cloudLink {
+    font-size: 0;
+    color: transparent;
+    width: 31%;
+    display: block;
+    float: left;
+    margin: 10px 1.5% 0;
+
+    &.sauce              { @extend .sprite-sauce-labs-logo-sw; margin-left: 0; }
+    &.sauce:hover        { @extend .sprite-sauce-labs-logo }
+    &.browserstack       { @extend .sprite-browserstack-logo-sw }
+    &.browserstack:hover { @extend .sprite-browserstack-logo }
+    &.testingbot         { @extend .sprite-testingbot-logo-sw }
+    &.testingbot:hover   { @extend .sprite-testingbot-logo }
+}
+img[alt="TestingBot"] {
+    margin-right: 0;
 }
 
 strong {
