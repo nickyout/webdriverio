@@ -25,7 +25,7 @@ footer {
         display: block;
         clear: both;
         text-align: center;
-        padding-top: 90px;
+        padding-top: 30px;
         overflow: hidden;
 
         em {
@@ -35,6 +35,15 @@ footer {
 
         a {
             text-decoration: none;
+        }
+    }
+
+    .badges {
+        text-align: right;
+        margin-top: 30px;
+
+        .nodei {
+            display: block;
         }
     }
 }

@@ -6,9 +6,14 @@ header {
 
     .container {
         position: relative;
+        background: image-url("webdriver-robot.png") 81.12% 45px no-repeat;
+        overflow: hidden;
+        height: 100%;
 
         .hero {
             text-decoration: none;
+            width: 470px;
+            margin: 30px 20px 0 0;
 
             h1 {
                 font-size: $headerLogoFontSize;
@@ -16,16 +21,7 @@ header {
                 text-transform: uppercase;
                 font-weight: bold;
                 letter-spacing: 0.1em;
-                width: 470px;
-                margin: 30px 20px 0 0;
                 line-height: 0.92em;
-                float: left;
-
-                &:before {
-                    content: url('/images/webdriver-robot.png');
-                    display: block;
-                    text-align: center;
-                }
             }
         }
 
@@ -35,7 +31,7 @@ header {
             height: $naviHeight;
             display: block;
             float: left;
-            margin: 24.7% 20px 0 0;
+            margin: 53.7% 20px 0 0;
             text-align: center;
             font-size: 1.15em;
             line-height: 2.5em;
@@ -47,17 +43,21 @@ header {
         }
 
         aside {
-            text-align: right;
-            position: absolute;
-            top: 20px;
-            right: 0;
+            margin-top: 100px;
+            color: $white;
 
-            a {
-                margin-left: 10px;
+            li {
+                margin-top: 18px;
+                letter-spacing: -0.15px;
 
-                &.nodei {
-                    display: block;
-                    margin-bottom: 5px;
+                span {
+                    color: green;
+                    margin-right: 10px;
+                    font-size: 20px;
+                }
+
+                a {
+                    text-decoration: none;
                 }
             }
         }

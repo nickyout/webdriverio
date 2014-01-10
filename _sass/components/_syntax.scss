@@ -4,7 +4,8 @@
     pre{ padding: 15px 0; }
     .sh {
         color: $black;
-        word-spacing: 0.3em;
+        font-size: 0.9em;
+        font-family: monospace;
         .lineno {
             display: block;
             float: left;
