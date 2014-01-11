@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    max-width: 100%;
     border-top: $headerTopBorder solid $orange;
     height: $headerHeight;
     background: $headerBackground;
@@ -48,7 +48,7 @@ header {
 
             li {
                 margin-top: 18px;
-                letter-spacing: -0.15px;
+                letter-spacing: -0.4px;
 
                 span {
                     color: green;

@@ -1,10 +1,11 @@
 footer {
     width: 100%;
     border-bottom: $headerTopBorder solid $orange;
-    height: $headerHeight;
+    min-height: $headerHeight;
     background: $headerBackground;
     color: $footerFontColor;
     font-size: 0.8em;
+    position: relative;
 
     .twitterLink {
         @include border-radius(100px);

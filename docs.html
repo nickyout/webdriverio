@@ -30,15 +30,16 @@
                 {% for command in commands reversed %}
                 <article class="command">
                     <h4><a class="icon-link" id="{{command.name}}" href="#{{command.name}}">{{ command.name }}
-                    (
+                    <span>(
                     {% assign i = 0 %}
                     {% for argument in command.arguments %}
                         {{ argument.name }}{% if forloop.last == false %},{% endif %}
                     {% endfor %}
-                    )</a></h4>
+                    )</span></a></h4>
                     {{ command.content }}
 
                     {% if command.arguments | size > 0 %}
+                    <strong>Arguments:</strong>
                     <ul class="arguments">
                         {% for argument in command.arguments %}
                         <li>

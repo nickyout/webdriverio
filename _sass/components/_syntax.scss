@@ -1,7 +1,10 @@
 .highlight  {
     background: $white;
 
-    pre{ padding: 15px 0; }
+    pre{ 
+        padding: 15px 0;
+        overflow: scroll;
+    }
     .sh {
         color: $black;
         font-size: 0.9em;
