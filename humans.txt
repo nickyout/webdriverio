@@ -1,0 +1,6 @@
+# TEAM
+
+    Christian Bromann -- @bromann
+    Vincent Voyer -- @zeroload
+    Camilo Tapia -- @camilotapia
+    Dan Jenkins -- @dan_jenkins
