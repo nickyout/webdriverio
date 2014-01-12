@@ -190,6 +190,10 @@
         float: none;
         margin: 0 auto 30px;
     }
+
+    .highlight pre {
+        overflow: scroll;
+    }
 }
 
 @media only screen and (max-width: 480px) {

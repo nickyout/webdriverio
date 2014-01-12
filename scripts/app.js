@@ -1,6 +1,7 @@
 var App = function() {
 
     this.ui = {
+        window: $('html,body'),
         body: $('body'),
         gists: $('.gists > div')
     };
@@ -21,7 +22,7 @@ App.prototype.scrollToCommand = function(e) {
 
     if (target.length) {
         var targetOffset = target.offset().top - 30;
-        this.ui.body.animate({scrollTop: targetOffset}, 1000, 'easeOutExpo');
+        this.ui.window.animate({scrollTop: targetOffset}, 1000, 'easeOutExpo');
         return false;
     }
 };

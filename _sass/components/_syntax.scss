@@ -3,7 +3,6 @@
 
     pre{ 
         padding: 15px 0;
-        overflow: scroll;
     }
     .sh {
         color: $black;
@@ -125,7 +124,6 @@ table.highlight {
     font: 12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
     font-weight: bold;
     color: #666666;
-    text-shadow: 1px 1px rgba(255,255,255,0.8);
     overflow: hidden;
     padding: 5px 0 5px 10px;
     border: 1px solid #ddd;
