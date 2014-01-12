@@ -1,11 +1,12 @@
 footer {
     width: 100%;
     border-bottom: $headerTopBorder solid $orange;
-    min-height: $headerHeight;
+    min-height: $headerHeight - 25px;
     background: $headerBackground;
     color: $footerFontColor;
     font-size: 0.8em;
     position: relative;
+    padding-top: 25px;
 
     .twitterLink {
         @include border-radius(100px);
@@ -26,8 +27,8 @@ footer {
         display: block;
         clear: both;
         text-align: center;
-        padding-top: 30px;
         overflow: hidden;
+        padding-top: 20px;
 
         em {
             color: $heartColor;
@@ -41,7 +42,7 @@ footer {
 
     .badges {
         text-align: right;
-        margin-top: 30px;
+        margin-top: 10px;
 
         .nodei {
             display: block;

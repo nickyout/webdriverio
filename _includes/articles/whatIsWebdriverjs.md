@@ -1,12 +1,19 @@
+What is WebdriverJS
+-------------------
 
-What is WebdriverJS?
---------------------
+Webdriverjs lets you control a browser or a mobile application with just a few
+lines of code. Creating automated tests is as easy as:
 
-WebdriverJS is an open source testing utility for nodejs. It makes it possible
-to write super easy selenium tests with Javascript in your favorite BDD or TDD
-test framework. Even Cucumber tests are supported.<br>
-<br>
-It basically sends requests to a Selenium server via the
-[WebDriver Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#Command_Reference)
-and handles with its response. These requests are wraped in useful commands, which
-provides callbacks to test several aspects of your site in a automated way.
+{% highlight sh linenos %}
+var webdriverjs = require('webdriverjs');
+var options = { desiredCapabilities: { browserName: 'chrome' } };
+
+webdriverjs
+    .remote(options)
+    .init()
+    .url('http://www.google.com')
+    .title(function(err, res) {
+        console.log('Title was: ' + res.value);
+    })
+    .end();
+{% endhighlight %}

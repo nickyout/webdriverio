@@ -48,7 +48,7 @@ html,body {
     width: 31%;
     display: block;
     float: left;
-    margin: 10px 1.5% 0;
+    margin: 0 1.5% 0;
 
     &.sauce              { @extend .sprite-sauce-labs-logo-sw; margin-left: 0; }
     &.sauce:hover        { @extend .sprite-sauce-labs-logo }
@@ -63,6 +63,11 @@ img[alt="TestingBot"] {
 
 strong {
     font-family: $fontBold;
+}
+
+p {
+    padding: 10px 0;
+    overflow: hidden;
 }
 
 [class*="icon-"]:before,

@@ -14,12 +14,16 @@
             float: left;
             width: 30px;
             text-align: center;
-            color: $white;
+            padding-top: 1px;
 
-            &:before {
-                color: $black;
-                content: "$";
-                padding: 0 15px;
+            &:last-Child {
+                color: $white;
+
+                &:before {
+                    color: $black;
+                    content: "$";
+                    padding: 0 15px;
+                }
             }
         }
     }
@@ -84,7 +88,7 @@
 }
 
 div.highlight {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 table.highlight {
@@ -128,7 +132,7 @@ table.highlight {
     border-top: 1px solid #ccc;
     border-bottom: 0;
     border-radius: 3px 3px 0 0;
-    margin-top: 25px;
+    margin-top: 15px;
 
     span {
         padding-right: 10px;

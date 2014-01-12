@@ -3,7 +3,7 @@
     header {
 
         .container {
-            background-position: 24.12% 60px;
+            background-position: 24.12% 40px;
 
             .hero {
                 position: absolute;
@@ -23,7 +23,7 @@
                 position: absolute;
                 right: 0;
                 text-align: right;
-                padding: 206px 0 2% 1%;
+                padding: 185px 0 2% 1%;
 
                 .link {
                     float: right;
@@ -52,8 +52,8 @@
         margin: 0 9% 30px;
     }
 
-    body > section {
-        margin: 0 2%;
+    .content {
+        margin: 50px 2%;
     }
 
     .social {
@@ -79,33 +79,39 @@
 
 @media only screen and (max-width: 750px) {
 
-    header .container {
-        background-position: 50% 15px;
+    header  {
+        padding-top: 0;
+        height: $headerHeight;
 
-        .col2 {
-            max-width: 100%;
-            width: 100%;
-            height: 93%;
+        .container {
+            background-position: 50% 15px;
 
-            .hero {
-                position: static;
-                display: block;
-                margin: 0;
-                padding-top: 210px;
+            .col2,
+            .col2:first-Child {
+                max-width: 100%;
                 width: 100%;
-                text-align: center;
+                height: 93%;
+
+                .hero {
+                    position: static;
+                    display: block;
+                    margin: 0;
+                    padding-top: 210px;
+                    width: 100%;
+                    text-align: center;
+                }
             }
-        }
 
-        .col2.last {
-            height: auto;
-            text-align: center;
-            padding-top: 290px;
+            .col2.last {
+                height: auto;
+                text-align: center;
+                padding-top: 290px;
 
-            .link {
-                float: none;
-                display: inline-block;
-                margin: 0 5px;
+                .link {
+                    float: none;
+                    display: inline-block;
+                    margin: 0 5px;
+                }
             }
         }
     }
@@ -160,24 +166,20 @@
         margin-bottom: 10px;
     }
 
-    section .container {
-        padding-top: 20px;
+    section .container .col2 {
+        float: none;
+        width: 100%;
+        max-width: 100%;
 
-        .col2 {
-            float: none;
+        &.last {
+            padding: 0 0 50px;
             width: 100%;
             max-width: 100%;
+            margin: 0;
+        }
 
-            &.last {
-                padding: 0 0 50px;
-                width: 100%;
-                max-width: 100%;
-                margin: 0;
-            }
-
-            h2 {
-                margin-top: 0;
-            }
+        h2 {
+            margin-top: 0;
         }
     }
 }
@@ -192,8 +194,9 @@
 
 @media only screen and (max-width: 480px) {
     header .container {
-        .col2 .hero {
-            margin: 20px 0 0;
+        .col2 .hero,
+        .col2:first-Child .hero {
+            padding-top: 230px;
 
             h1 {
                 font-size: 38px;

@@ -4,18 +4,26 @@
 ---
 
 {% capture whatIsWebdriverjs %}{% include articles/whatIsWebdriverjs.md %}{% endcapture %}
-{% capture whoIsUsing %}{% include articles/runYourTestsInTheCloud.md %}{% endcapture %}
+{% capture howDoesItWorks %}{% include articles/howDoesItWorks.md %}{% endcapture %}
+{% capture runYourTestsInTheCloud %}{% include articles/runYourTestsInTheCloud.md %}{% endcapture %}
+{% capture install %}{% include articles/install.md %}{% endcapture %}
+{% capture writeTests %}{% include articles/writeTests.md %}{% endcapture %}
+
 {% capture easeOfUse %}{% include articles/teaser/easeOfUse.md %}{% endcapture %}
 {% capture featureRich %}{% include articles/teaser/featureRich.md %}{% endcapture %}
 {% capture compatible %}{% include articles/teaser/compatible.md %}{% endcapture %}
 {% capture extendable %}{% include articles/teaser/extendable.md %}{% endcapture %}
 
-<article class="col2">
+<article>
     {{ whatIsWebdriverjs | markdownify }}
 </article>
 
+<article class="col2">
+    {{ howDoesItWorks | markdownify }}
+</article>
+
 <article class="col2 last">
-    {{ whoIsUsing | markdownify }}
+    {{ runYourTestsInTheCloud | markdownify }}
 </article>
 
 <aside class="teaser">
@@ -36,31 +44,17 @@
     </div>
 </aside>
 
-<section>
-    <h2>Install</h2>
-    <p>Either download from github or use NPM.</p>
+<article>
+    {{ install | markdownify }}
+</article>
 
-    {% highlight sh linenos %}npm install webdriverjs{% endhighlight %}
+<article>
+    {{ writeTests | markdownify }}
+</article>
 
-    <p>
-        To run tests on your local machine, you have to download a selenium
-        standalone server which executes the selenium commands. You find the
-        latest version <a href="https://code.google.com/p/selenium/downloads/detail?name=selenium-server-standalone-2.39.0.jar">here</a>.
-    </p>
-</section>
-
-<section>
-    <h2>Write Tests</h2>
-    <p>Run selenium server first:</p>
-
-    {% highlight sh linenos %}java -jar path/to/your/selenium-server-standalone-2.39.0.jar{% endhighlight %}
-
-    <p>
-        WebdriverJS is just a simple library which enables Selenium testing for your TDD/BDD
-        tests. It provides simple functions for navigating the web browser or mobile application
-        and checking attributes and states of elements. Check out the examples.
-    </p>
-
+<article>
+    <h2>Examples</h2>
+    
     <div class="gist-header">
         <span>BDD/TDD test framework:</span>
 
@@ -82,4 +76,4 @@
         <div class="vows">{% gist 6416899 %}</div>
     </div>
     
-</section>
+</article>

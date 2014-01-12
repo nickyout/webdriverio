@@ -1,19 +1,21 @@
 header {
     max-width: 100%;
     border-top: $headerTopBorder solid $orange;
-    height: $headerHeight;
+    height: $headerHeight - 20px;
     background: $headerBackground;
+    padding-top: 20px;
 
     .container {
         position: relative;
-        background: image-url("webdriver-robot.png") 81.12% 45px no-repeat;
+        background: image-url("webdriver-robot.png") 81.12% 25px no-repeat;
         overflow: hidden;
         height: 100%;
 
         .hero {
+            display: block;
             text-decoration: none;
             width: 470px;
-            margin: 30px 20px 0 0;
+            margin: 20px 20px 0 0;
 
             h1 {
                 font-size: $headerLogoFontSize;
@@ -31,7 +33,7 @@ header {
             height: $naviHeight;
             display: block;
             float: left;
-            margin: 53.7% 20px 0 0;
+            margin: 248px 20px 0 0;
             text-align: center;
             font-size: 1.15em;
             line-height: 2.5em;
@@ -43,7 +45,7 @@ header {
         }
 
         aside {
-            margin-top: 100px;
+            margin-top: 120px;
             color: $white;
 
             li {

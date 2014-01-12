@@ -1,6 +1,5 @@
 h2 {
-    margin: 40px 0 0;
-    margin-bottom: 20px;
+    margin: 20px 0 10px;
     font-size: $h2Size;
 }
 
@@ -12,7 +11,7 @@ h3 {
 h4 {
     color: $orange;
     font-size: $h4Size;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h5 {
@@ -27,5 +26,5 @@ h5 {
 h6 {
     font-size: 16px;
     line-height: 1.1em;
-    margin-bottom: 5px;
+    padding: 10px 0;
 }

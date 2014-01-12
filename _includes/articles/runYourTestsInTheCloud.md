@@ -3,8 +3,8 @@ Run your tests in the cloud
 
 Services like Sauce Labs or BrowserStack provide selenium testing on remote hosts.
 Be able to run tests on a wide collection of plattforms, devices and browser combinations
-without any configuration in your enviroment.<br>
-<br>
+without any configuration in your enviroment.
+
 Webdriverjs supports services like:
 
 <p>
