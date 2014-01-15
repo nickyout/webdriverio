@@ -3,16 +3,24 @@
   title: WebdriverJS - Selenium 2.0 javascript bindings for nodejs
 ---
 
-{% capture whatIsWebdriverjs %}{% include articles/whatIsWebdriverjs.md %}{% endcapture %}
-{% capture howDoesItWorks %}{% include articles/howDoesItWorks.md %}{% endcapture %}
-{% capture runYourTestsInTheCloud %}{% include articles/runYourTestsInTheCloud.md %}{% endcapture %}
-{% capture install %}{% include articles/install.md %}{% endcapture %}
-{% capture writeTests %}{% include articles/writeTests.md %}{% endcapture %}
+{% capture whatIsWebdriverjs %}{% include whatIsWebdriverjs.md %}{% endcapture %}
+{% capture howDoesItWorks %}{% include howDoesItWorks.md %}{% endcapture %}
+{% capture runYourTestsInTheCloud %}{% include runYourTestsInTheCloud.md %}{% endcapture %}
+{% capture install %}{% include install.md %}{% endcapture %}
+{% capture writeTests %}{% include writeTests.md %}{% endcapture %}
 
-{% capture easeOfUse %}{% include articles/teaser/easeOfUse.md %}{% endcapture %}
-{% capture featureRich %}{% include articles/teaser/featureRich.md %}{% endcapture %}
-{% capture compatible %}{% include articles/teaser/compatible.md %}{% endcapture %}
-{% capture extendable %}{% include articles/teaser/extendable.md %}{% endcapture %}
+{% capture easeOfUse %}{% include teaser/easeOfUse.md %}{% endcapture %}
+{% capture featureRich %}{% include teaser/featureRich.md %}{% endcapture %}
+{% capture compatible %}{% include teaser/compatible.md %}{% endcapture %}
+{% capture extendable %}{% include teaser/extendable.md %}{% endcapture %}
+
+{% capture buster %}{% include examples/buster.md %}{% endcapture %}
+{% capture cucumber %}{% include examples/cucumber.md %}{% endcapture %}
+{% capture jasmine %}{% include examples/jasmine.md %}{% endcapture %}
+{% capture mochaChai %}{% include examples/mochaChai.md %}{% endcapture %}
+{% capture mocha %}{% include examples/mocha.md %}{% endcapture %}
+{% capture nodeUnit %}{% include examples/nodeUnit.md %}{% endcapture %}
+{% capture vows %}{% include examples/vows.md %}{% endcapture %}
 
 <article>
     {{ whatIsWebdriverjs | markdownify }}
@@ -67,13 +75,13 @@
         <button data-gist="vows">Vows</button>
     </div>
     <div class="gists">
-        <div class="mocha show">{% gist 6416885 %}</div>
-        <div class="mochachai">{% gist 6416873 %}</div>
-        <div class="buster">{% gist 6416851 %}</div>
-        <div class="cucumber">{% gist 6417028 %}</div>
-        <div class="jasmine">{% gist 6416864 %}</div>
-        <div class="nodeunit">{% gist 6416889 %}</div>
-        <div class="vows">{% gist 6416899 %}</div>
+        <div class="mocha show">{{ mocha | markdownify }}</div>
+        <div class="mochachai">{{ mochaChai | markdownify }}</div>
+        <div class="buster">{{ buster | markdownify }}</div>
+        <div class="cucumber">{{ cucumber | markdownify }}</div>
+        <div class="jasmine">{{ jasmine | markdownify }}</div>
+        <div class="nodeunit">{{ nodeUnit | markdownify }}</div>
+        <div class="vows">{{ vows | markdownify }}</div>
     </div>
     
 </article>

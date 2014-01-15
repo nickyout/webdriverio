@@ -14,8 +14,6 @@
             float: left;
             width: 30px;
             text-align: center;
-            position: relative;
-            top: 1px;
 
             &:last-Child {
                 color: $white;
@@ -91,13 +89,6 @@
 div.highlight {
     margin: 10px 0;
 }
-
-table.highlight {
-    width: 100%;
-    font-size: 0.8em;
-    line-height: 1.2em;
-    max-height: 300px;
-}
 .gist-data {
     max-height: 500px;
 }
@@ -118,9 +109,45 @@ table.highlight {
     .show {
         display: block;
     }
+
+    .highlight,
+    .highlight pre {
+        margin: 0;
+        padding: 0;
+        line-height: 0.9em;
+    }
+
+    .highlight {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+
+        pre {
+            padding: 5px 0;
+            background: url(data:image/gif;base64,R0lGODlhJAACAIAAAN3d3ezs7CH5BAAAAAAALAAAAAAkAAIAAAIIjI+pu8APGSgAOw==) left top repeat-y $white;
+            max-height: 500px;
+            overflow: scroll;
+        }
+    }
+
+    .sh {
+        width: 100%;
+        font-size: 0.8em;
+
+        .lineno {
+            padding-top: 2px;
+            color: #aaa;
+            background-color: #ececec;
+            color: #aaa;
+            border-right: 1px solid #ddd;
+            text-align: right;
+            padding: 2px 5px 0 0;
+        }
+    }
+
 }
 
-.gist-header {
+.gist-header,
+.gists footer {
     @include background-image(linear-gradient(#fafafa, #e8e8e8));
     background-repeat: repeat-x;
     font: 12px "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
@@ -130,7 +157,6 @@ table.highlight {
     padding: 5px 0 5px 10px;
     border: 1px solid #ddd;
     border-top: 1px solid #ccc;
-    border-bottom: 0;
     border-radius: 3px 3px 0 0;
     margin-top: 15px;
 
@@ -147,6 +173,17 @@ table.highlight {
         &:hover {
             cursor: pointer;
         }
+    }
+}
+.gists footer {
+    @include border-radius(0 0 3px 3px);
+    padding: 10px 0 10px 10px;
+    margin-top: 0;
+
+    a {
+        float: right;
+        text-decoration: none;
+        margin-right: 10px;
     }
 }
 
