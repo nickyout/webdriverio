@@ -1,61 +1,87 @@
-<!DOCTYPE html>
+---
+  layout: default
+  title: WebdriverJS - Selenium 2.0 javascript bindings for nodejs
+---
 
-<title>WebdriverJS - Selenium 2.0 javascript bindings for nodejs</title>
+{% capture whatIsWebdriverjs %}{% include whatIsWebdriverjs.md %}{% endcapture %}
+{% capture howDoesItWorks %}{% include howDoesItWorks.md %}{% endcapture %}
+{% capture runYourTestsInTheCloud %}{% include runYourTestsInTheCloud.md %}{% endcapture %}
+{% capture install %}{% include install.md %}{% endcapture %}
+{% capture writeTests %}{% include writeTests.md %}{% endcapture %}
 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="This library is a webdriver module for nodejs. It makes it possible to write super easy selenium tests in your favorite BDD or TDD test framework.">
-<meta name="keywords" content="webdriverjs, webdriver, selenium, TDD, BDD, test, driven, development, saucelabs, sauce, labs, mocha, nodeUnit, buster, phantomjs, chai, vows, jasmine, assert, cucumber">
+{% capture easeOfUse %}{% include teaser/easeOfUse.md %}{% endcapture %}
+{% capture featureRich %}{% include teaser/featureRich.md %}{% endcapture %}
+{% capture compatible %}{% include teaser/compatible.md %}{% endcapture %}
+{% capture extendable %}{% include teaser/extendable.md %}{% endcapture %}
 
-<style>
-@import url(http://fonts.googleapis.com/css?family=Lato);
+{% capture buster %}{% include examples/buster.md %}{% endcapture %}
+{% capture cucumber %}{% include examples/cucumber.md %}{% endcapture %}
+{% capture jasmine %}{% include examples/jasmine.md %}{% endcapture %}
+{% capture mochaChai %}{% include examples/mochaChai.md %}{% endcapture %}
+{% capture mocha %}{% include examples/mocha.md %}{% endcapture %}
+{% capture nodeUnit %}{% include examples/nodeUnit.md %}{% endcapture %}
+{% capture vows %}{% include examples/vows.md %}{% endcapture %}
 
-body,html {
-    margin: 0;
-    padding: 0;
-    background: url('data:image/gif;base64,R0lGODlhBAAEAJEAABERESIiIgcHBwAAACH5BAAAAAAALAAAAAAEAAQAAAIHBCQRiIZaAAA7') repeat;
-    font-family: 'Lato', sans-serif;
-}
-section {
-    min-width: 800px;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin: -200px 0 0 -400px;
-}
-h1 {
-    font-size: 60px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    width: 470px;
-    margin: 55px 20px 0 0;
-    line-height: 0.92em;
-    float: left;
-    text-align: center;
-    width: 100%;
-}
-h2 {
-    float: left;
-    font-size: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    text-align: center;
-    width: 100%;
-}
-img {
-    clear: both;
-    display: block;
-    margin: 0 auto;
-}
-</style>
+<article>
+    {{ whatIsWebdriverjs | markdownify }}
+</article>
 
-<section>
-    <img src="images/webdriver-robot.png" alt="Webdriverjs">
-    <h1>WebdriverJS</h1>
-    <h2>Website comming soon...</h2>
-</section>
+<article class="col2">
+    {{ howDoesItWorks | markdownify }}
+</article>
+
+<article class="col2 last">
+    {{ runYourTestsInTheCloud | markdownify }}
+</article>
+
+<aside class="teaser">
+    <div class="teaserbox">
+        {{ easeOfUse | markdownify }}
+    </div>
+
+    <div class="teaserbox">
+        {{ featureRich | markdownify }}
+    </div>
+
+    <div class="teaserbox">
+        {{ compatible | markdownify }}
+    </div>
+
+    <div class="teaserbox">
+        {{ extendable | markdownify }}
+    </div>
+</aside>
+
+<article>
+    {{ install | markdownify }}
+</article>
+
+<article>
+    {{ writeTests | markdownify }}
+</article>
+
+<article>
+    <h2>Examples</h2>
+    
+    <div class="gist-header">
+        <span>BDD/TDD test framework:</span>
+
+        <button data-gist="mocha">Mocha</button>
+        <button data-gist="mochachai">Mocha + Chai</button>
+        <button data-gist="buster">Buster.JS</button>
+        <button data-gist="cucumber">Cucumber</button>
+        <button data-gist="jasmine">Jasmine</button>
+        <button data-gist="nodeunit">NodeUnit</button>
+        <button data-gist="vows">Vows</button>
+    </div>
+    <div class="gists">
+        <div class="mocha show">{{ mocha | markdownify }}</div>
+        <div class="mochachai">{{ mochaChai | markdownify }}</div>
+        <div class="buster">{{ buster | markdownify }}</div>
+        <div class="cucumber">{{ cucumber | markdownify }}</div>
+        <div class="jasmine">{{ jasmine | markdownify }}</div>
+        <div class="nodeunit">{{ nodeUnit | markdownify }}</div>
+        <div class="vows">{{ vows | markdownify }}</div>
+    </div>
+    
+</article>
