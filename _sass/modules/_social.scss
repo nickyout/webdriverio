@@ -4,4 +4,10 @@
 	height: $socialHeight;
 	text-align: center;
 	line-height:4em;
+
+	.fb-like {
+		line-height: normal;
+		position: relative;
+		bottom: 3px;
+	}
 }
