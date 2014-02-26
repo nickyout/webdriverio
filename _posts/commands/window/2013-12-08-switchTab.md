@@ -4,7 +4,7 @@ name: switchTab
 arguments:
     - type: String
       name: tabID
-      name: tab ID to focus on
+      desc: tab ID to focus on
     - type: Function
       name: callback(err)
       desc: A function returning if command was executed successfully
