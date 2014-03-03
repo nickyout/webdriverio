@@ -1,5 +1,5 @@
-How does it works?
-------------------
+How does it work?
+-----------------
 
 WebdriverJS is an open source testing utility for nodejs. It makes it possible
 to write super easy selenium tests with Javascript in your favorite BDD or TDD
