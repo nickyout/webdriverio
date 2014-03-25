@@ -8,4 +8,4 @@ test framework. Even Cucumber tests are supported.
 It basically sends requests to a Selenium server via the
 [WebDriver Wire Protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol#Command_Reference)
 and handles with its response. These requests are wraped in useful commands, which
-provides callbacks to test several aspects of your site in a automated way.
+provides callbacks to test several aspects of your site in an automated way.
