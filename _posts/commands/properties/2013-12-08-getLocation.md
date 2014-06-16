@@ -3,7 +3,7 @@ tags: properties
 name: getLocation
 arguments:
     - type: String
-      name: css selector
+      name: selector
       desc: element with requested position offset
     - type: Function
       name: callback(err, value)

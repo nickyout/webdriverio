@@ -17,6 +17,6 @@ arguments:
 ---
 
 Get a CSS property from a DOM-element selected with one of the base
-selecting mechanisms in the webdriver protocol (class name, css selector,
+selecting mechanisms in the webdriver protocol (class name, selector,
 id, name, link text, partial link text, tag name, xpath). Find more
 informations about supported selecting strategies [here](http://code.google.com/p/selenium/wiki/JsonWireProtocol#/session/:sessionId/element).

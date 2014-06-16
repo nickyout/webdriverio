@@ -3,7 +3,7 @@ tags: actions
 name: clearElement
 arguments:
     - type: String
-      name: css selector
+      name: selector
       desc: Input element
     - type: Function
       name: callback(err)

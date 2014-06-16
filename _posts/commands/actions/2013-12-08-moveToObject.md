@@ -3,7 +3,7 @@ tags: actions
 name: moveToObject
 arguments:
     - type: String
-      name: css selector
+      name: selector
       desc: move mouse by an offset from specified element
     - type: Function
       name: callback(err)

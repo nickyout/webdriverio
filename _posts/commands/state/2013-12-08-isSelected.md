@@ -3,7 +3,7 @@ tags: state
 name: isSelected
 arguments:
     - type: String
-      name: css selector
+      name: selector
       desc: option element or input of type checkbox or radio
     - type: Function
       name: callback(err, value)
@@ -11,4 +11,4 @@ arguments:
 ---
 
 Return true or false if an &lt;option&gt; element, or an &lt;input&gt; element of type checkbox
-or radio is currently selected found by css selector.
+or radio is currently selected found by selector.

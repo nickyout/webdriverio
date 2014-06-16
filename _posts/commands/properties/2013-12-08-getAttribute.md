@@ -3,7 +3,7 @@ tags: properties
 name: getAttribute
 arguments:
     - type: String
-      name: css selector
+      name: selector
       desc: element with requested attribute
     - type: String
       name: attribute name
@@ -13,4 +13,4 @@ arguments:
       desc: A function returning with requested attribute value
 ---
 
-Get an attribute from an DOM-element based on the css selector and attribute name.
+Get an attribute from an DOM-element based on the selector and attribute name.

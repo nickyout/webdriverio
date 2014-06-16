@@ -4,10 +4,10 @@ name: dragAndDrop
 arguments:
     - type: String
       name: source
-      desc: source css selector
+      desc: source selector
     - type: String
       name: destination
-      desc: destination css selector
+      desc: destination selector
     - type: Function
       name: callback(err)
       desc: A function returning if command was executed successfully
